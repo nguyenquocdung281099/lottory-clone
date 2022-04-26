@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="customBootstrap.css" />
+  </head>
+  <body>
+    <div class="container-fluid px-2 px-md-1">
+      <header class="header mt-2">
+        <div
+          class="header-top d-md-flex d-block justify-content-md-between align-items-md-center"
+        >
+          <div
+            class="header-left d-flex justify-content-between align-items-center flex-column flex-md-row pr-2 pl-2"
+          >
+            <div
+              class="d-flex justify-content-between align-items-center w-100"
+            >
+              <label for="bar"
+                ><img class="d-md-none" src="/image/bar.svg" alt="bar"
+              /></label>
+
+              <img src="/image/logo.svg" alt="logo" />
+              <img class="d-md-none" src="/image/user.svg" alt="logo" />
+            </div>
+            <div
+              class="header-information ml-md-3 d-flex d-md-block justify-content-between align-items-center w-100"
+            >
+              <div class="header-information__name">
+                Welcome <strong>Roma</strong> — <a href="#">Logout</a>
+              </div>
+              <div class="header-information__name">
+                Your balance: <strong>Р 0,00</strong>
+              </div>
+            </div>
+          </div>
+          <div class="header-right d-md-block d-none">
+            <div
+              class="social-netword d-flex justify-content-between align-items-center mt-3 mb-2"
+            >
+              <a href="#" class="mr-2">
+                <img src="/image/icon-facebook.svg" alt="facebook" />
+              </a>
+              <a href="#" class="mr-2">
+                <img src="/image/icon-twitter.svg" alt="twitter" />
+              </a>
+              <a href="#" class="mr-2">
+                <img src="/image/icon-messager.svg" alt="messager" />
+              </a>
+              <a href="#" class="mr-2">
+                <img src="/image/icon-whatsapp.svg" alt="whatsapp" />
+              </a>
+            </div>
+            <div class="">
+              <div
+                class="form-group header-language header-left d-flex justify-content-between align-items-center"
+              >
+                <label for=""
+                  ><img src="/image/icon-flag.svg" class="mr-1"
+                /></label>
+                <select class="" name="" id="">
+                  <option selected>English</option>
+                  <option value="">English</option>
+                  <option value="">English</option>
+                  <option value="">English</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="checkbox" name="" id="bar" class="d-none" />
+        <div
+          class="header-bottom d-none d-md-flex align-items-center justify-content-between"
+        >
+          <nav class="header-menu">
+            <ul class="nav-list d-flex align-items-center">
+              <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">PLAY ALL LOTTERY</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">LOTTERY GROUPS</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">PROMOTIONS</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn">MY ACCOUNT</button>
+        </div>
+        <div class="position-relative header-bottom-mobile position-fixed">
+          <label for="bar" class="position-absolute close-nav">X</label>
+          <nav class="header-menu d-flex mt-5">
+            <ul
+              class="nav-list d-flex flex-column align-items-center justify-content-start w-100"
+            >
+              <li class="nav-item m-3">
+                <a href="#" class="nav-link">HOME</a>
+              </li>
+              <li class="nav-item m-3">
+                <a href="#" class="nav-link">PLAY ALL LOTTERY</a>
+              </li>
+              <li class="nav-item m-3">
+                <a href="#" class="nav-link">LOTTERY GROUPS</a>
+              </li>
+              <li class="nav-item m-3">
+                <a href="#" class="nav-link">PROMOTIONS</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="banner mt-4 mb-md-7 mb-15">
+        <img src="/image/banner.svg" alt="banner" />
+        <div
+          class="card-banner-preview d-flex justify-content-between align-items-center mt-4 p-2 flex-column flex-md-row"
+        >
+          <div
+            class="mb-3 mb-md-0 card-banner-item w-100 w-md-30 rounded border p-2 d-flex justify-content-between align-items-center"
+          >
+            <img
+              src="/image/banner-logo1.svg"
+              alt=""
+              class="logo-card-banner mr-1"
+            />
+            <div class="card-banner-description">
+              <div
+                class="card-banner-description__top d-flex justify-content-between mb-lg-2"
+              >
+                <h3 class="text-uppercase card-banner-title">YOU PICK</h3>
+                <a href="#">Play Now » </a>
+              </div>
+              <div class="card-banner-description__bottom text-muted">
+                It’s easy! Pick from over 40 official lottery games you wish to
+                play. Then select your winning numbers.
+              </div>
+            </div>
+          </div>
+          <div
+            class="mb-3 mb-md-0 card-banner-item w-100 w-md-30 rounded border p-2 d-flex justify-content-between align-items-center"
+          >
+            <img
+              src="/image/banner-logo2.svg"
+              alt=""
+              class="logo-card-banner mr-1"
+            />
+            <div class="card-banner-description">
+              <div
+                class="card-banner-description__top d-flex justify-content-between mb-lg-2"
+              >
+                <h3 class="text-uppercase card-banner-title">we buy</h3>
+                <a href="#">More Details » </a>
+              </div>
+              <div class="card-banner-description__bottom text-muted">
+                Once you’ve picked your winning numbers we’ll purchase your
+                ticket on your behalf.
+              </div>
+            </div>
+          </div>
+          <div
+            class="mb-3 mb-md-0 card-banner-item w-100 w-md-30 rounded border p-2 d-flex justify-content-between align-items-center"
+          >
+            <img
+              src="/image/banner-logo3.svg"
+              alt=""
+              class="logo-card-banner mr-1"
+            />
+            <div class="card-banner-description">
+              <div
+                class="card-banner-description__top d-flex justify-content-between mb-lg-2"
+              >
+                <h3 class="text-uppercase card-banner-title">you win!!!</h3>
+                <a href="#">Withdraw My Winnings »</a>
+              </div>
+              <div class="card-banner-description__bottom text-muted">
+                When you win, we’ll automatically credit your account the full
+                value of your winnings.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-play">
+        <h1 class="section-title p-1">BIGGEST UPCOMING LOTTERY DRAWS</h1>
+        <div
+          class="p-2 mb-md-7 mb-15 play-biggest__wrapper d-flex justify-content-between align-items-center flex-column flex-md-row"
+        >
+          <div
+            class="play-biggest__card--item mb-3 mb-md-0 w-100 w-md-30 rounded border"
+          >
+            <div
+              class="card--item--top d-flex justify-content-evenly align-items-center"
+            >
+              <img src="/image/loto.svg" alt="" />
+              <div class="card--item__information">
+                <div class="d-flex mb-2">
+                  <img src="/image/icon-flag.svg" class="mr-1 rounded" />
+                  <h3>Mega Millions</h3>
+                </div>
+                <h1 class="price">$94 000 000</h1>
+              </div>
+            </div>
+            <div class="card--item--bottom p-3 d-flex align-items-center">
+              <button class="btn">Play Now</button>
+              <div class="d-flex align-items-center">
+                <img class="mr-1" src="/image/alarm.svg" /> 1:22:01
+              </div>
+            </div>
+          </div>
+          <div
+            class="play-biggest__card--item mb-3 mb-md-0 w-100 w-md-30 rounded border"
+          >
+            <div
+              class="card--item--top d-flex justify-content-evenly align-items-center"
+            >
+              <img src="/image/loto.svg" alt="" />
+              <div class="card--item__information">
+                <div class="d-flex mb-2">
+                  <img src="/image/icon-flag.svg" class="mr-1 rounded" />
+                  <h3>Mega Millions</h3>
+                </div>
+                <h1 class="price">$94 000 000</h1>
+              </div>
+            </div>
+            <div class="card--item--bottom p-3 d-flex align-items-center">
+              <button class="btn">Play Now</button>
+              <div class="d-flex align-items-center">
+                <img class="mr-1" src="/image/alarm.svg" /> 1:22:01
+              </div>
+            </div>
+          </div>
+          <div
+            class="play-biggest__card--item mb-3 mb-md-0 w-100 w-md-30 rounded border"
+          >
+            <div
+              class="card--item--top d-flex justify-content-evenly align-items-center"
+            >
+              <img src="/image/loto.svg" alt="" />
+              <div class="card--item__information">
+                <div class="d-flex mb-2">
+                  <img src="/image/icon-flag.svg" class="mr-1 rounded" />
+                  <h3>Mega Millions</h3>
+                </div>
+                <h1 class="price">$94 000 000</h1>
+              </div>
+            </div>
+            <div class="card--item--bottom p-3 d-flex align-items-center">
+              <button class="btn">Play Now</button>
+              <div class="d-flex align-items-center">
+                <img class="mr-1" src="/image/alarm.svg" /> 1:22:01
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="list-lottery mb-md-7 mb-15">
+        <button class="btn btn-title">PLAY UPCOMING LOTTERIES ONLINE</button>
+        <div
+          class="list-lottery-wrapper d-flex align-items-center flex-wrap justify-content-evenly"
+        >
+          <div
+            class="w-50 w-md-20 position-relative rounded border list-lottery-item mt-3 d-flex align-items-center flex-column p-2"
+          >
+            <img src="./image/mega-rouder.svg" class="mb-4" />
+            <div class="d-flex mb-2">
+              <img src="/image/icon-flag.svg" class="mr-1 rounded" />
+              <h3>Mega Millions</h3>
+            </div>
+            <h1 class="price m-2">$122 000 000</h1>
+            <p class="list-lottery__time m-1">1:22:01</p>
+            <button class="btn mt-2">Play Now</button>
+            <img
+              src="/image/star.svg"
+              class="position-absolute star-lottery--item"
+            />
+          </div>
+          <div
+            class="w-50 w-md-20 position-relative rounded border list-lottery-item mt-3 d-flex align-items-center flex-column p-2"
+          >
+            <img src="./image/mega-rouder.svg" class="mb-4" />
+            <div class="d-flex mb-2">
+              <img src="/image/icon-flag.svg" class="mr-1 rounded" />
+              <h3>Mega Millions</h3>
+            </div>
+            <h1 class="price m-2">$122 000 000</h1>
+            <p class="list-lottery__time m-1">1:22:01</p>
+            <button class="btn mt-2">Play Now</button>
+            <img
+              src="/image/star.svg"
+              class="position-absolute star-lottery--item"
+            />
+          </div>
+          <div
+            class="w-50 w-md-20 position-relative rounded border list-lottery-item mt-3 d-flex align-items-center flex-column p-2"
+          >
+            <img src="./image/mega-rouder.svg" class="mb-4" />
+            <div class="d-flex mb-2">
+              <img src="/image/icon-flag.svg" class="mr-1 rounded" />
+              <h3>Mega Millions</h3>
+            </div>
+            <h1 class="price m-2">$122 000 000</h1>
+            <p class="list-lottery__time m-1">1:22:01</p>
+            <button class="btn mt-2">Play Now</button>
+            <img
+              src="/image/star.svg"
+              class="position-absolute star-lottery--item"
+            />
+          </div>
+          <div
+            class="w-50 w-md-20 position-relative rounded border list-lottery-item mt-3 d-flex align-items-center flex-column p-2"
+          >
+            <img src="./image/mega-rouder.svg" class="mb-4" />
+            <div class="d-flex mb-2">
+              <img src="/image/icon-flag.svg" class="mr-1 rounded" />
+              <h3>Mega Millions</h3>
+            </div>
+            <h1 class="price m-2">$122 000 000</h1>
+            <p class="list-lottery__time m-1">1:22:01</p>
+            <button class="btn mt-2">Play Now</button>
+            <img
+              src="/image/star.svg"
+              class="position-absolute star-lottery--item"
+            />
+          </div>
+          <div
+            class="w-50 w-md-20 position-relative rounded border list-lottery-item mt-3 d-flex align-items-center flex-column p-2"
+          >
+            <img src="./image/mega-rouder.svg" class="mb-4" />
+            <div class="d-flex mb-2">
+              <img src="/image/icon-flag.svg" class="mr-1 rounded" />
+              <h3>Mega Millions</h3>
+            </div>
+            <h1 class="price m-2">$122 000 000</h1>
+            <p class="list-lottery__time m-1">1:22:01</p>
+            <button class="btn mt-2">Play Now</button>
+            <img
+              src="/image/star.svg"
+              class="position-absolute star-lottery--item"
+            />
+          </div>
+          <div
+            class="w-50 w-md-20 position-relative rounded border list-lottery-item mt-3 d-flex align-items-center flex-column p-2"
+          >
+            <img src="./image/mega-rouder.svg" class="mb-4" />
+            <div class="d-flex mb-2">
+              <img src="/image/icon-flag.svg" class="mr-1 rounded" />
+              <h3>Mega Millions</h3>
+            </div>
+            <h1 class="price m-2">$122 000 000</h1>
+            <p class="list-lottery__time m-1">1:22:01</p>
+            <button class="btn mt-2">Play Now</button>
+            <img
+              src="/image/star.svg"
+              class="position-absolute star-lottery--item"
+            />
+          </div>
+          <div
+            class="w-50 w-md-20 position-relative rounded border list-lottery-item mt-3 d-flex align-items-center flex-column p-2"
+          >
+            <img src="./image/mega-rouder.svg" class="mb-4" />
+            <div class="d-flex mb-2">
+              <img src="/image/icon-flag.svg" class="mr-1 rounded" />
+              <h3>Mega Millions</h3>
+            </div>
+            <h1 class="price m-2">$122 000 000</h1>
+            <p class="list-lottery__time m-1">1:22:01</p>
+            <button class="btn mt-2">Play Now</button>
+            <img
+              src="/image/star.svg"
+              class="position-absolute star-lottery--item"
+            />
+          </div>
+          <div
+            class="w-50 w-md-20 position-relative rounded border list-lottery-item mt-3 d-flex align-items-center flex-column p-2"
+          >
+            <img src="./image/mega-rouder.svg" class="mb-4" />
+            <div class="d-flex mb-2">
+              <img src="/image/icon-flag.svg" class="mr-1 rounded" />
+              <h3>Mega Millions</h3>
+            </div>
+            <h1 class="price m-2">$122 000 000</h1>
+            <p class="list-lottery__time m-1">1:22:01</p>
+            <button class="btn mt-2">Play Now</button>
+            <img
+              src="/image/star.svg"
+              class="position-absolute star-lottery--item"
+            />
+          </div>
+          <div
+            class="w-50 w-md-20 position-relative rounded border list-lottery-item mt-3 d-flex align-items-center flex-column p-2"
+          >
+            <img src="./image/mega-rouder.svg" class="mb-4" />
+            <div class="d-flex mb-2">
+              <img src="/image/icon-flag.svg" class="mr-1 rounded" />
+              <h3>Mega Millions</h3>
+            </div>
+            <h1 class="price m-2">$122 000 000</h1>
+            <p class="list-lottery__time m-1">1:22:01</p>
+            <button class="btn mt-2">Play Now</button>
+            <img
+              src="/image/star.svg"
+              class="position-absolute star-lottery--item"
+            />
+          </div>
+          <div
+            class="w-50 w-md-20 position-relative rounded border list-lottery-item mt-3 d-flex align-items-center flex-column p-2"
+          >
+            <img src="./image/mega-rouder.svg" class="mb-4" />
+            <div class="d-flex mb-2">
+              <img src="/image/icon-flag.svg" class="mr-1 rounded" />
+              <h3>Mega Millions</h3>
+            </div>
+            <h1 class="price m-2">$122 000 000</h1>
+            <p class="list-lottery__time m-1">1:22:01</p>
+            <button class="btn mt-2">Play Now</button>
+            <img
+              src="/image/star.svg"
+              class="position-absolute star-lottery--item"
+            />
+          </div>
+        </div>
+        <a href="#" class="d-flex justify-content-end">More Details »</a>
+      </section>
+
+      <section class="row biggest-winner">
+        <div class="col-md-8 col-12">
+          <button class="btn btn-title">BIGGEST LOTTERY WINNER</button>
+          <div class="biggest-winner__left rounded border mt-3 mb-3 py-3 px-2">
+            <div
+              class="mt-2 mb-2 biggest-winner__left-header d-flex justify-content-center align-items-center m-3"
+            >
+              <img src="./image/loto-2.svg" class="mr-2" />
+              <h2 class="mr-2 font-weight-bold">WON</h2>
+              <h1 class="price-winner">€100 000 000</h1>
+            </div>
+            <div class="biggest-winner__content row">
+              <div class="biggest-winner--content__left col-12 col-md-6">
+                <img src="./image/loto-winner.svg" class="mt-2" />
+
+                <div
+                  class="d-flex justify-content-center align-items-center mt-3 mb-3"
+                >
+                  <h3 class="text-uppercase font-weight-bolder">
+                    UK Lotto results:
+                  </h3>
+                  <div class="number-loto d-flex">
+                    <div class="number-loto__item m-1">07</div>
+                    <div class="number-loto__item m-1">07</div>
+                    <div class="number-loto__item m-1">07</div>
+                    <div class="number-loto__item m-1">07</div>
+                    <div class="number-loto__item m-1">07</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="biggest-winner__desciption col-12 col-md-6 text-center"
+              >
+                <h3 class="font-weight-bold mb-4">
+                  Shaun Vincent a Lottery Winner
+                </h3>
+                <p class="mb-4 biggest-winner__desciption--content">
+                  Shaun Vincent, from Barnsley, celebrates his £1,158,038
+                  National Lottery win after his cheque presentation at the
+                  Cedar Court Hotel, Wakefield.
+                </p>
+                <a class="link text-center d-block" href="#"
+                  >Read the full story</a
+                >
+                <button class="mb-4 mt-4 btn btn-biggest">Play Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <button class="btn btn-title">OUR LATEST WINNERS</button>
+          <div
+            class="mt-3 mb-3 p-2 biggest-winner__total--price rounded border d-flex justify-content-center flex-column align-items-center"
+          >
+            <h3 class="mt-2 mb-2">Total prizes paid out</h3>
+            <h1 class="mt-1 mb-1">US$ 107 233 768</h1>
+            <div class="d-flex align-items-end">
+              <h1>6 975 146</h1>
+              <h3 class="ml-1 font-weight-bolder">winning tickets</h3>
+            </div>
+          </div>
+
+          <div class="mt-3 mb-3 p-2 rounded border d-flex align-items-center">
+            <img class="mr-3" src="/image/icon-winner.svg" />
+            <div class="">
+              <h5 class="mb-1">20.11.2021</h5>
+              <div class="d-flex mb-1">
+                <img src="/image/icon-flag.svg" class="mr-2" />
+                <h5 class="font-weight-bold">J.JH won P175</h5>
+              </div>
+              <h5>in 7 ИЗ 49 draw #13476</h5>
+            </div>
+          </div>
+
+          <div class="mt-3 mb-3 p-2 rounded border d-flex align-items-center">
+            <img class="mr-3" src="/image/icon-winner.svg" />
+            <div>
+              <h5 class="mb-1">20.11.2021</h5>
+              <div class="d-flex mb-1">
+                <img src="/image/icon-flag.svg" class="mr-2" />
+                <h5 class="font-weight-bold">J.JH won P175</h5>
+              </div>
+              <h5>in 7 ИЗ 49 draw #13476</h5>
+            </div>
+          </div>
+
+          <div class="mt-3 mb-3 p-2 rounded border d-flex align-items-center">
+            <img class="mr-3" src="/image/icon-winner.svg" />
+            <div>
+              <h5 class="mb-1">20.11.2021</h5>
+              <div class="d-flex mb-1">
+                <img src="/image/icon-flag.svg" class="mr-2" />
+                <h5 class="font-weight-bold">J.JH won P175</h5>
+              </div>
+              <h5>in 7 ИЗ 49 draw #13476</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row question mb-md-7 mb-15">
+        <h2 class="font-weight-bolder mt-4 mb-2 ml-3">
+          FREQUENTLY ASKED QUESTION (F.A.Q.)
+        </h2>
+        <div class="col-8" id="accordion">
+          <div class="card border-0">
+            <div class="card-header pl-0 bg-white " id="headingOne">
+              <h5
+                class="mb-0 d-flex justify-content-between align-items-center"
+              >
+                <button
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Can I play the lottery online?
+                </button>
+                <img src="/image/arrow-down.svg" />
+              </h5>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card border-0">
+            <div class="card-header pl-0 bg-white" id="headingTwo">
+              <h5
+                class="mb-0 d-flex justify-content-between align-items-center"
+              >
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  How will I get my wins?
+                </button>
+                <img src="/image/arrow-down.svg" />
+              </h5>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card border-0">
+            <div class="card-header pl-0 bg-white" id="headingThree">
+              <h5
+                class="mb-0 d-flex justify-content-between align-items-center"
+              >
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  How will I get my wins?
+                </button>
+                <img src="/image/arrow-down.svg" />
+              </h5>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="position-relative">
+        <img
+          class="position-absolute img-background w-100"
+          src="/image/background-footer.svg"
+        />
+        <div class="footer-content m-md-5 position-relative">
+          <div
+            class="footer-header d-flex justify-content-between align-items-center"
+          >
+            <div class="d-flex align-items-center">
+              <img
+                src="/image/footer-whatsapp.svg"
+                alt=""
+                srcset=""
+                class="mr-2"
+              />
+              <div>
+                <h3 class="font-weight-bolder">Live chat by WhatsApp</h3>
+                <p class="text-muted">Customer Service</p>
+              </div>
+            </div>
+            <div class="d-md-flex align-items-center d-none ">
+              <img class="mr-1" src="/image/footer-facebook.svg" />
+              <img class="mr-1" src="/image/footer-twitter.svg" />
+              <img class="mr-1" src="/image/footer-message.svg" />
+            </div>
+          </div>
+
+          <div
+            class="footer-content d-flex justify-content-between flex-column flex-md-row"
+          >
+            <div class="footer-content-item w-100 w-md-30">
+              <h3 class="mb-3 mt-4 font-weight-bold">USEFUL LINKS</h3>
+              <ul class="footer-list">
+                <li class="footer-item mt-1 mb-1">
+                  <a href="#" class="footer-link text-dark"
+                    >Lottery Results & Winners</a
+                  >
+                </li>
+                <li class="footer-item mt-1 mb-1">
+                  <a href="#" class="footer-link text-dark"
+                    >Lottery Promotions</a
+                  >
+                </li>
+                <li class="footer-item mt-1 mb-1">
+                  <a href="#" class="footer-link text-dark">About Us</a>
+                </li>
+                <li class="footer-item mt-1 mb-1">
+                  <a href="#" class="footer-link text-dark">Contact Us</a>
+                </li>
+                <li class="footer-item mt-1 mb-1">
+                  <a href="#" class="footer-link text-dark"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li class="footer-item mt-1 mb-1">
+                  <a href="#" class="footer-link text-dark">Security</a>
+                </li>
+                <li class="footer-item mt-1 mb-1">
+                  <a href="#" class="footer-link text-dark">Privacy Policy</a>
+                </li>
+                <li class="footer-item mt-1 mb-1">
+                  <a href="#" class="footer-link text-dark"
+                    >Acceptable Use Policy</a
+                  >
+                </li>
+                <li class="footer-item mt-1 mb-1">
+                  <a href="#" class="footer-link text-dark"
+                    >Website Use Policy</a
+                  >
+                </li>
+                <li class="footer-item mt-1 mb-1">
+                  <a href="#" class="footer-link text-dark font-weight-bold"
+                    >Affiliate program</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-content-item w-100 w-md-30">
+              <h3 class="mb-3 mt-4 font-weight-bold">SMARTWINNERS</h3>
+              <p>
+                The trade name SmartWinners and all content on this website is a
+                copyright of SmartWinners Limited. All rights reserved. We are
+                an independent lottery ticket purchasing service. We are not
+                affiliated with nor are we endorsed by any State sanctioned
+                lottery organization. We make no claims on our site to be such.
+              </p>
+              <h4>
+                Our registered business address is Unit 6158, PO Box 6945,
+                London, W1A 6US, United Kingdom.
+              </h4>
+            </div>
+            <div
+              class="footer-content-item w-100 w-md-30 d-flex flex-row flex-md-column align-items-md-end"
+            >
+              <div class="mr-3">
+                <h3 class="mb-3 mt-4 font-weight-bold">PAYMENT METHODS</h3>
+                <img src="/image/payment.svg" />
+              </div>
+              <div>
+                <h3 class="mb-3 mt-4 font-weight-bold">SECURITY & TRUST</h3>
+                <img src="/image/security.svg" />
+                <div class="social-bottom  d-flex align-items-center d-block d-md-none ">
+                  <img class="mr-1" src="/image/footer-facebook.svg" />
+                  <img class="mr-1" src="/image/footer-twitter.svg" />
+                  <img class="mr-1" src="/image/footer-message.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

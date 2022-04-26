@@ -1,0 +1,301 @@
+body {
+  font-size: 14px;
+  font-family: Roboto;
+}
+
+
+.header .header-top {
+  height: 80px;
+}
+
+.header .header-language select {
+  border: none;
+  width: 80px;
+}
+
+.header .header-bottom .header-menu li {
+  border-right: 1px solid white;
+}
+.header .header-bottom .header-menu a {
+  color: white;
+}
+.header .header-bottom {
+  height: 34px;
+  background-color: #f30000;
+  border-radius: 8px;
+}
+
+.header .header-bottom .btn {
+  height: 100%;
+  background: #0061a3;
+  border-radius: 8px;
+  color: white;
+}
+/* banner */
+
+.banner img {
+  width: 100%;
+}
+
+.banner .card-banner-preview {
+  /* height: 90px; */
+}
+
+.banner .card-banner-preview .card-banner-item {
+  width: 32%;
+}
+.banner .card-banner-preview .card-banner-item a {
+  color: #0061a3;
+  text-decoration: underline #0061a3 solid;
+}
+.banner .card-banner-preview img {
+  height: 72px;
+  width: 72px;
+}
+.banner .card-banner-preview .card-banner-item .card-banner-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.section-title {
+  margin-bottom: 30px;
+}
+/* section-play */
+
+.section-play .play-biggest__card--item {
+  width: 32%;
+  height: 150px;
+}
+.section-play .play-biggest__card--item .card--item--top {
+  justify-content: space-evenly;
+  height: 90px;
+}
+.section-play .card--item--bottom {
+  height: 60px;
+  justify-content: space-evenly;
+  background-color: #0061a3;
+  color: white;
+  font-size: 18px;
+}
+
+.play-biggest__card--item h1 {
+  color: #13902a;
+}
+
+.section-play .card--item--bottom button {
+  width: 170px;
+  background-color: #f7d300;
+  color: black;
+  margin-right: 40px;
+}
+
+.btn-title {
+  width: 100%;
+  background-color: red;
+  color: white;
+}
+
+/* list lottery */
+
+.list-lottery-wrapper .list-lottery-item {
+  width: 19%;
+  min-height: 270px;
+}
+
+
+.list-lottery-wrapper .list-lottery-item h1 {
+  font-size: 20px;
+}
+
+.list-lottery-wrapper .list-lottery-item button {
+  width: 80%;
+  background-color: #f7d300;
+}
+
+.list-lottery-item .list-lottery__time {
+  font-size: 16px;
+  color: #0061a3;
+}
+
+.list-lottery-item .star-lottery--item {
+  right: 10px;
+}
+
+.list-lottery > a {
+  font-size: 18px;
+  color: #0061a3;
+  text-decoration: underline #0061a3 solid;
+  text-align: end;
+}
+
+.biggest-winner h2 {
+  font-size: 28px;
+}
+.biggest-winner .price-winner {
+  color: #0061a3;
+  font-size: 36px;
+}
+
+.biggest-winner__content h3 {
+  font-size: 16px;
+}
+.link {
+  text-decoration: underline #0061a3 solid;
+  text-align: end;
+}
+
+.biggest-winner__content .btn {
+  width: 230px;
+  background-color: #f7d300;
+}
+
+.number-loto__item {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.biggest-winner__desciption--content {
+  line-height: 24px;
+}
+
+.biggest-winner__total--price h3 {
+  font-size: 18px;
+}
+
+.biggest-winner__total--price > h1 {
+  color: #13902a;
+  line-height: 30px;
+}
+
+/* accordion */
+
+.question h2 {
+  font-size: 24px;
+}
+#accordion button {
+  font-size: 18px;
+}
+
+/* footer {
+  height: 500px;
+} */
+footer .img-background {
+  z-index: 0;
+}
+footer .footer-content {
+  z-index: 1;
+}
+footer .footer-content p {
+  font-size: 12px;
+}
+footer .footer-content h3 {
+  font-size: 16px;
+}
+footer .footer-content-item {
+  width: 30%;
+}
+footer .footer-content-item .footer-link {
+  font-size: 16px;
+}
+
+footer .footer-content-item p {
+  font-size: 12px;
+}
+footer .footer-content-item h4 {
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+/* responsive */
+
+.header-bottom-mobile {
+  top: 0;
+  background-color: white;
+  color: black;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+.header-bottom-mobile li a {
+  color: black;
+  cursor: pointer;
+}
+
+.close-nav {
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+.header-bottom-mobile {
+  display: none;
+}
+#bar:checked ~ .header-bottom-mobile {
+  display: block;
+  transition: all 0.25s;
+}
+
+.logo-card-banner {
+  width: 10%;
+}
+.card-banner-description {
+  width: 80%;
+}
+
+
+@media (min-width: 576px) {
+  body {
+    font-size: 12px;
+  }
+  h3{
+    font-size: 14px !important;
+  }
+  h4 {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .play-biggest__card--item .card--item--top > img{
+
+  }
+  .list-lottery-wrapper {
+    padding: 10px;
+  }
+ 
+}
+
+@media (min-width: 768px) {
+  .play-biggest__card--item .card--item--top > img{
+    width: 46%;
+    height: 46%;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 14px;
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 26px;
+    font-weight: 800;
+  }
+  .list-lottery-wrapper {
+    padding: 10px 50px;
+  }
+}
+
+.social-bottom img {
+  width: 24px;
+}
